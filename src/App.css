@@ -1,0 +1,165 @@
+* {
+  font-family: monospace;
+}
+.app {
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/dubt0www3/image/upload/v1679837860/pexels-johannes-plenio-1118873_mvtmqz.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  width: 40%;
+  padding: 20px;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.search-box {
+  margin-bottom: 20px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: #333;
+  outline: none;
+}
+.search-icon {
+  color: #333;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-favorite-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-favorite-btn:hover {
+  background-color: #3e8e41;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.celsius {
+  margin-top: 0%;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.weather {
+  color: rgb(105, 105, 245);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.favorites-box {
+  width: 25rem;
+}
+
+.favorites-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.favorites-box ul {
+  padding: 0;
+  margin: 10px;
+  margin-left: 25px;
+  list-style-type: symbols("circle");
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+
+.favorites-box li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.favorites-box li:hover {
+  text-decoration: underline;
+}
+.weather-img {
+  height: 100px;
+  width: 100px;
+  padding-bottom: 0%;
+}
+
+.fav-btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.clear-btn {
+  border: none;
+  background-color: red;
+  color: whitesmoke;
+  border-radius: 5px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
