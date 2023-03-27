@@ -65,6 +65,13 @@ class App extends Component {
     return weatherFirstLetter;
   };
 
+  getDate = () => {
+    const { weather } = this.state;
+    const time = weather.dt;
+    const date = new Date(time * 1000);
+    return date.toLocaleString();
+  };
+
   render() {
     const { query, weather, favorites } = this.state;
 
@@ -108,6 +115,7 @@ class App extends Component {
                     alt="weather icon"
                   />
                   <h1 className="celsius">{Math.round(weather.main.temp)}°C</h1>
+                  <p>{this.getDate()}</p>
                   <p className="weather">{this.getDescription()}</p>
                 </div>
               </div>
